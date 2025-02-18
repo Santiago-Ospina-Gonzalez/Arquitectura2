@@ -18,10 +18,6 @@ Instrucciones Claves en Ensamblador En un programa en ensamblador, podríamos us
 
 MOV: Para mover valores entre registros y memoria. DIV: Para dividir números y extraer dígitos. CMP y JUMP (JMP, JE, JNE, etc.): Para comparar y controlar el flujo del programa. LOOP: Para recorrer los datos en un ciclo. INT 21h (DOS) o SYSCALL (Linux): Para entrada/salida de datos.
 
-Angel Cuero
-
-como hacer un hola mundo en assembly para ARM:
-
 .globl _start
 _start:
 ldr r0,=0x101f1000

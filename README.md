@@ -17,3 +17,86 @@ Leer o almacenar datos numéricos en memoria. Extraer el primer dígito de cada 
 Instrucciones Claves en Ensamblador En un programa en ensamblador, podríamos usar instrucciones como:
 
 MOV: Para mover valores entre registros y memoria. DIV: Para dividir números y extraer dígitos. CMP y JUMP (JMP, JE, JNE, etc.): Para comparar y controlar el flujo del programa. LOOP: Para recorrer los datos en un ciclo. INT 21h (DOS) o SYSCALL (Linux): Para entrada/salida de datos.
+
+Alejandro: Flujo de trabajo:
+
+El flujo de trabajo de nuestro equipo se basa en la metodologí Scrum, marco de gestión de proyectos que facilita la estructura y prácticas de trabajo, además a cada miembro del equipo se le asignará un rol especifico.
+
+Las herraminetas que utilizaremos para realizar el proyecto integrador son las siguientes:
+
+Frontend:
+
+● Angular: Framework utilizado para el desarrollo del frontend de la plataforma web,
+permitiendo la creación de interfaces dinámicas y funcionales.
+● Node.js: Utilizado como entorno de ejecución para desarrollar herramientas
+relacionadas con el frontend.
+● Bootstrap: Framework de CSS utilizado para facilitar el diseño responsivo y la
+creación rápida de componentes estilizados en el frontend.
+● Figma: Herramienta utilizada para la creación de prototipos y diseño visual del
+frontend.
+
+Backend:
+
+● Java Spring Boot: Framework para la construcción del backend, facilitando la
+creación de APIs REST y la lógica del negocio.
+● PostgreSQL: Base de datos relacional utilizada para la gestión y almacenamiento
+de datos.
+
+Infraestructura:
+
+● AWS: Plataforma en la nube empleada para alojar y desplegar la aplicación y sus
+componentes.
+● Docker: Herramienta para contenerizar aplicaciones, facilitando el despliegue y la
+portabilidad.
+● Bitvise: Software utilizado para conectar y gestionar servidores Linux durante los
+procesos de despliegue.
+
+Gestión del Proyecto:
+
+● Jira: Plataforma para la planificación y seguimiento de tareas, con un enfoque en la
+metodología Scrum.
+● Slack: Herramienta de comunicación y colaboración utilizada por el equipo.
+● Jitsi: Solución de videoconferencia para reuniones y coordinación entre los
+miembros del equipo.
+
+● Metodología Scrum: Marco ágil utilizado para la organización y desarrollo iterativo
+del proyecto.
+
+Control de Versiones:
+
+● GitHub: Plataforma de control de versiones utilizada para almacenar, gestionar y
+colaborar en el código fuente del proyecto.
+
+Angel Cuero
+
+como hacer un hola mundo en assembly para ARM:
+
+.globl _start
+_start:
+ldr r0,=0x101f1000
+@ ASCII codes stored
+@ at [r0] get printed
+mov r1, #104 @ 'h'
+str r1,[r0]
+mov r1, #101 @ 'e'
+str r1,[r0]
+mov r1, #108 @ 'l'
+str r1,[r0]
+mov r1, #108 @ 'l'
+str r1,[r0]
+mov r1, #111 @ 'o'
+str r1,[r0]
+mov r1, #32 @ ' '
+str r1,[r0]
+mov r1, #119 @ 'w'
+str r1,[r0]
+mov r1, #111 @ 'o'
+str r1,[r0]
+mov r1, #114 @ 'r'
+str r1,[r0]
+mov r1, #108 @ 'l'
+str r1,[r0]
+mov r1, #100 @ 'd'
+str r1,[r0]
+my_exit: @do infinite loop at the end
+b my_exit

@@ -7,6 +7,12 @@ Esta distribución de dígitos no es aleatoria, sino que sigue una proporción l
 
 La Ley de Benford ha encontrado aplicaciones en una variedad de campos, desde la contabilidad forense hasta la ciencia de datos debido a su capacidad para detectar irregularidades y fraudes, ya que los datos manipulados o falsificados tienden a mostrar una distribución de dígitos diferente a la esperada según esta ley.
 
+Angie: 2. Los Inicios de ARM en Acorn Computers
+
+La historia de ARM se remonta a Cambridge, Reino Unido, en la sede de Acorn Computers, una empresa reconocida en la década de 1980 por sus innovadores microordenadores. Acorn alcanzó notoriedad con el desarrollo del BBC Micro, un ordenador educativo diseñado por encargo de la British Broadcasting Corporation (BBC) y basado en el procesador 6502 de Rockwell. Este equipo tuvo un gran impacto en el Reino Unido, pero la compañía pronto identificó la necesidad de un procesador más avanzado para las próximas generaciones de computadoras personales.
+
+En 1983, el equipo de investigación y desarrollo de Acorn, encabezado por Steve Furber y Roger Wilson, emprendió el diseño de un nuevo procesador. Inspirados en la arquitectura Reduced Instruction Set Computing (RISC), su objetivo era crear una CPU más eficiente y potente que las existentes, pero sin renunciar a la simplicidad y a un costo accesible.
+
 Josefo: 3. Ensamblador:
 
 Ley de Benford y su Implementación en Ensamblador Implementar la Ley de Benford en lenguaje ensamblador implica procesar una lista de números y contar la frecuencia de los primeros dígitos. Para ello, necesitamos:
